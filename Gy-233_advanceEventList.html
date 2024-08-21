@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI Layout</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            width: calc(100% - 40px);
+            height: calc(100% - 40px);
+            margin: 20px;
+            border: 1px solid #000;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .header, .footer {
+            height: 3cm;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .footer {
+            border-bottom: none;
+            border-top: 1px solid #ccc;
+        }
+
+
+        .title {
+            padding: 10px 20px;
+            background-color: #ccc;
+            font-size: 32px;
+        }
+
+        .home-link {
+            margin: 20px 0;
+            margin-left: 20px;
+            font-size: 32px;
+        }
+
+        .side-buttons {
+            display: flex;
+            flex-direction: row;
+            gap: 0px;
+            margin-left: 20px;
+        }
+
+        .side-buttons button {
+            width: 140px;
+            padding: 20px;
+            background-color: #ddd;
+            border: 1px solid #999;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .right-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: flex-end;
+            margin-right: 20px;
+            margin-top: 20px;
+        }
+
+        .right-buttons button {
+            padding: 20px 40px;
+            background-color: #ddd;
+            border: 1px solid #999;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        .large-button {
+            padding: 30px 80px;
+            background-color: #ccc;
+            border: 1px solid #999;
+            cursor: pointer;
+            text-align: center;
+            font-size: 24px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="header">
+            <div class="title">借金管理</div>
+        </div>
+
+        <div style="display: flex; justify-content: space-between;">
+
+            <div>
+                <div class="home-link">ユーザ名</div>
+                <div class="side-buttons">
+                    <button>脱出</button>
+                    <button>2024年8月22日</button>
+                    <button>2024年8月22日</button>
+                    <button>114514円</button>
+                    <button>詳細</button>
+                    <button>編集</button>
+                </div>
+                <div class="side-buttons">
+                    <button>脱出</button>
+                    <button>2024年8月22日</button>
+                    <button>2024年8月22日</button>
+                    <button>114514円</button>
+                    <button>詳細</button>
+                    <button>編集</button>
+                </div>
+                <div class="side-buttons">
+                    <button>脱出</button>
+                    <button>2024年8月22日</button>
+                    <button>2024年8月22日</button>
+                    <button>114514円</button>
+                    <button>詳細</button>
+                    <button>編集</button>
+                </div>
+                
+            </div>
+
+        </div>
+
+
+        <div class="footer"></div>
+    </div>
+</body>
+</html>
